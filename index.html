@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mazali Kofe - Hayotning har bir lahzasidan bahramand bo'ling</title>
+    <meta
+      name="description"
+      content="Mazali Kofe - Eng yuqori sifatli kofe tajribasini taqdim etamiz, tanlangan kofe donalaridan professional qovurishgacha, sizga har bir mukammal kofe poychasini olib kelamiz"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="bg-cream text-gray-800">
+    <!-- Navigation -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+    >
+      <nav
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-coffee text-2xl text-coffee-dark"></i>
+          <span class="font-display text-2xl font-bold text-coffee-dark"
+            >Mazali Kofe</span
+          >
+        </div>
+
+        <div class="hidden md:flex space-x-8">
+          <a
+            href="#home"
+            class="nav-link hover:text-coffee-medium transition-colors"
+            >Bosh sahifa</a
+          >
+          <a
+            href="#about"
+            class="nav-link hover:text-coffee-medium transition-colors"
+            >Biz haqimizda</a
+          >
+          <a
+            href="#menu"
+            class="nav-link hover:text-coffee-medium transition-colors"
+            >Menyu</a
+          >
+          <a
+            href="#gallery"
+            class="nav-link hover:text-coffee-medium transition-colors"
+            >Galereya</a
+          >
+          <a
+            href="#testimonials"
+            class="nav-link hover:text-coffee-medium transition-colors"
+            >Sharhlar</a
+          >
+          <a
+            href="#contact"
+            class="nav-link hover:text-coffee-medium transition-colors"
+            >Aloqa</a
+          >
+        </div>
+
+        <button id="mobile-menu-button" class="md:hidden text-coffee-dark">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <div class="px-4 py-2 space-y-2">
+          <a
+            href="#home"
+            class="block py-2 hover:text-coffee-medium transition-colors"
+            >Bosh sahifa</a
+          >
+          <a
+            href="#about"
+            class="block py-2 hover:text-coffee-medium transition-colors"
+            >Biz haqimizda</a
+          >
+          <a
+            href="#menu"
+            class="block py-2 hover:text-coffee-medium transition-colors"
+            >Menyu</a
+          >
+          <a
+            href="#gallery"
+            class="block py-2 hover:text-coffee-medium transition-colors"
+            >Galereya</a
+          >
+          <a
+            href="#testimonials"
+            class="block py-2 hover:text-coffee-medium transition-colors"
+            >Sharhlar</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 hover:text-coffee-medium transition-colors"
+            >Aloqa</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center justify-center relative overflow-hidden coffee-bean-pattern"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent to-cream opacity-70"
+      ></div>
+
+      <div class="container mx-auto px-4 z-10 text-center">
+        <div class="animate-fadeInUp">
+          <h1
+            class="font-display text-5xl md:text-7xl font-bold text-coffee-dark mb-4"
+          >
+            Mazali Kofe
+          </h1>
+          <p class="text-xl md:text-2xl text-coffee-medium mb-8">
+            Hayotning har bir lahzasidan bahramand bo'ling
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#contact"
+              class="px-8 py-3 bg-coffee-dark text-white rounded-full hover:bg-coffee-medium transition-colors"
+            >
+              <i class="fas fa-map-marker-alt mr-2"></i>Bizni tashrif buyuring
+            </a>
+            <a
+              href="#menu"
+              class="px-8 py-3 border-2 border-coffee-dark text-coffee-dark rounded-full hover:bg-coffee-dark hover:text-white transition-colors"
+            >
+              <i class="fas fa-shopping-cart mr-2"></i>Hozir buyurtma bering
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coffee cup animation -->
+      <div
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-float"
+      >
+        <div class="relative">
+          <i class="fas fa-mug-hot text-6xl text-coffee-dark"></i>
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+            <i
+              class="fas fa-cloud text-3xl text-coffee-light opacity-60 animate-steam"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="scroll-reveal">
+            <h2
+              class="font-display text-4xl md:text-5xl font-bold text-coffee-dark mb-6"
+            >
+              Biz haqimizda
+            </h2>
+            <p class="text-lg text-gray-700 mb-4">
+              Mazali Kofe 2015-yilda kofe sevuvchi guruh tomonidan asos
+              solingan. Biz yaxshi kofe poychasi faqat sezgilarni
+              uyg'otmasligini, balki odamlar o'rtasidagi his-tuyg'ularni
+              bog'lashiga ishonamiz.
+            </p>
+            <p class="text-lg text-gray-700 mb-6">
+              Biz dunyoning turli burchaklaridan eng yuqori sifatli kofe
+              donalarini tanlaymiz, ehtiyotkorlik bilan qovurib va professional
+              tayyorlash orqali sizga har bir mukammal kofe poychasini taqdim
+              etamiz. Qattiq italyan espresso yoki yumshoq qo'l bilan
+              tayyorlangan单品dan qat'iy nazar, biz har bir tafsilga e'tibor
+              beramiz.
+            </p>
+            <p class="text-lg text-gray-700 mb-6">
+              Mazali Kofeda biz kofe taqdim etganimizdan ko'ra, iliq va qulay
+              ijtimoiy makon yaratamiz. Do'stlaringiz bilan uchrashish yoki bir
+              oz tinchlikni yakka o'zingiz bahramand qilish uchun kofe
+              do'konimizga tashrif buyuring.
+            </p>
+            <a
+              href="#contact"
+              class="inline-block px-6 py-3 bg-gold text-white rounded-full hover:bg-yellow-600 transition-colors"
+            >
+              Batafsil ma'lumot
+            </a>
+          </div>
+
+          <div class="scroll-reveal">
+            <div class="relative">
+              <img
+                src="https://picsum.photos/seed/coffee-shop/600/400.jpg"
+                alt="Kofe do'koni ichki qismi"
+                class="rounded-lg shadow-xl"
+              />
+              <div
+                class="absolute -bottom-6 -right-6 bg-coffee-dark text-white p-4 rounded-lg shadow-lg"
+              >
+                <div class="flex items-center space-x-2">
+                  <i class="fas fa-award text-2xl text-gold"></i>
+                  <div>
+                    <p class="font-bold">Sifatli kofe</p>
+                    <p class="text-sm">5 yil davomida mukofotlangan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section id="menu" class="py-20 bg-beige">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="font-display text-4xl md:text-5xl font-bold text-coffee-dark mb-4"
+          >
+            Tanlangan menyu
+          </h2>
+          <p class="text-lg text-gray-700">
+            Bizning diqqat bilan tanlangan kofe va shirinliklarimiz sizga
+            mukammal ta'm tajribasini olib keladi
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Menu item 1 -->
+          <div
+            class="menu-item bg-white rounded-lg overflow-hidden shadow-lg scroll-reveal"
+          >
+            <div class="relative">
+              <img
+                src="https://picsum.photos/seed/espresso/300/200.jpg"
+                alt="Espresso"
+                class="w-full h-48 object-cover"
+              />
+              <div
+                class="absolute top-4 right-4 bg-gold text-white px-3 py-1 rounded-full text-sm font-bold"
+              >
+                Mashhur
+              </div>
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-xl text-coffee-dark mb-2">Espresso</h3>
+              <p class="text-gray-600 mb-3">
+                Kuchli va boy klassik kofe, har kungizni uyg'otadi
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-coffee-dark"
+                  >28 000 so'm</span
+                >
+                <button
+                  class="px-4 py-2 bg-coffee-dark text-white rounded-full hover:bg-coffee-medium transition-colors"
+                >
+                  Buyurtma
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu item 2 -->
+          <div
+            class="menu-item bg-white rounded-lg overflow-hidden shadow-lg scroll-reveal delay-100"
+          >
+            <div class="relative">
+              <img
+                src="https://picsum.photos/seed/cappuccino/300/200.jpg"
+                alt="Cappuccino"
+                class="w-full h-48 object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-xl text-coffee-dark mb-2">
+                Kappuchino
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Yumshoq ko'pik va boy kofening mukammal kombinatsiyasi
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-coffee-dark"
+                  >32 000 so'm</span
+                >
+                <button
+                  class="px-4 py-2 bg-coffee-dark text-white rounded-full hover:bg-coffee-medium transition-colors"
+                >
+                  Buyurtma
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu item 3 -->
+          <div
+            class="menu-item bg-white rounded-lg overflow-hidden shadow-lg scroll-reveal delay-200"
+          >
+            <div class="relative">
+              <img
+                src="https://picsum.photos/seed/latte/300/200.jpg"
+                alt="Latte"
+                class="w-full h-48 object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-xl text-coffee-dark mb-2">Latte</h3>
+              <p class="text-gray-600 mb-3">
+                Yumshoq sut va xushbo'y kofening uyg'un raqsi
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-coffee-dark"
+                  >35 000 so'm</span
+                >
+                <button
+                  class="px-4 py-2 bg-coffee-dark text-white rounded-full hover:bg-coffee-medium transition-colors"
+                >
+                  Buyurtma
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu item 4 -->
+          <div
+            class="menu-item bg-white rounded-lg overflow-hidden shadow-lg scroll-reveal delay-300"
+          >
+            <div class="relative">
+              <img
+                src="https://picsum.photos/seed/mocha/300/200.jpg"
+                alt="Mocha"
+                class="w-full h-48 object-cover"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="font-bold text-xl text-coffee-dark mb-2">
+                Mokkaccino
+              </h3>
+              <p class="text-gray-600 mb-3">
+                Shokolad va kofening shirin uchrashuvi
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-xl font-bold text-coffee-dark"
+                  >38 000 so'm</span
+                >
+                <button
+                  class="px-4 py-2 bg-coffee-dark text-white rounded-full hover:bg-coffee-medium transition-colors"
+                >
+                  Buyurtma
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12 scroll-reveal">
+          <a
+            href="#"
+            class="inline-block px-8 py-3 bg-coffee-dark text-white rounded-full hover:bg-coffee-medium transition-colors"
+          >
+            To'liq menyunini ko'rish
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="font-display text-4xl md:text-5xl font-bold text-coffee-dark mb-4"
+          >
+            Kofe vaqti
+          </h2>
+          <p class="text-lg text-gray-700">
+            Bizning kofe dunyomizni o'rganing, har bir kofe poychasi ortidagi
+            hikoyani his qiling
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="scroll-reveal">
+            <img
+              src="https://picsum.photos/seed/coffee-beans/300/300.jpg"
+              alt="Kofe donalari"
+              class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="scroll-reveal delay-100">
+            <img
+              src="https://picsum.photos/seed/barista/300/300.jpg"
+              alt="Barista"
+              class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="scroll-reveal delay-200">
+            <img
+              src="https://picsum.photos/seed/coffee-cup/300/300.jpg"
+              alt="Kofe stakani"
+              class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="scroll-reveal delay-300">
+            <img
+              src="https://picsum.photos/seed/coffee-shop-interior/300/300.jpg"
+              alt="Kofe do'koni ichki qismi"
+              class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="scroll-reveal delay-400">
+            <img
+              src="https://picsum.photos/seed/coffee-art/300/300.jpg"
+              alt="Latte san'ati"
+              class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="scroll-reveal delay-500">
+            <img
+              src="https://picsum.photos/seed/coffee-machine/300/300.jpg"
+              alt="Kofe mashinasi"
+              class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="scroll-reveal">
+            <img
+              src="https://picsum.photos/seed/coffee-dessert/300/300.jpg"
+              alt="Kofe shirinliklari"
+              class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+          <div class="scroll-reveal delay-100">
+            <img
+              src="https://picsum.photos/seed/coffee-people/300/300.jpg"
+              alt="Kofe vaqti"
+              class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-beige">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="font-display text-4xl md:text-5xl font-bold text-coffee-dark mb-4"
+          >
+            Mijozlar sharhlari
+          </h2>
+          <p class="text-lg text-gray-700">
+            Mijozlarimiz nima deyishini eshiting
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-lg p-6 shadow-lg scroll-reveal">
+            <div class="flex items-center mb-4">
+              <img
+                src="https://picsum.photos/seed/customer1/60/60.jpg"
+                alt="Mijoz"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-coffee-dark">Javohir</h4>
+                <div class="text-gold">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Mazali Kofening lattesi men ichgan eng yaxshisi! Ko'pik yumshoq,
+              kofe xushbo'y, har safar tashrif buyurish zavq bag'ishlaydi.
+              Do'kondagi atmosfera ham ajoyib, ish kunlarim uchun birinchi
+              tanlovim."
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-white rounded-lg p-6 shadow-lg scroll-reveal delay-100"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="https://picsum.photos/seed/customer2/60/60.jpg"
+                alt="Mijoz"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-coffee-dark">Dilnoza</h4>
+                <div class="text-gold">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Bu yerda mokkaccino haqiqatan ham san'at asari! Shokolad va kofe
+              muvozanati mukammal, shirin lekin shirinlamas. Xodimlar ham
+              do'stona, doim mening afzalliklarimni eslaydilar."
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-white rounded-lg p-6 shadow-lg scroll-reveal delay-200"
+          >
+            <div class="flex items-center mb-4">
+              <img
+                src="https://picsum.photos/seed/customer3/60/60.jpg"
+                alt="Mijoz"
+                class="w-12 h-12 rounded-full mr-4"
+              />
+              <div>
+                <h4 class="font-bold text-coffee-dark">Bekzod</h4>
+                <div class="text-gold">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">
+              "Kofi ishqibozi sifatida, Mazali Kofening espressosi yuqori
+              darajada ekanligiga javob beraman. Kuchli lekin achchiq emas,
+              ta'mi uzoq davom etadi. Bu yer muhiti o'qish va ishlash uchun ham
+              juda mos."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="font-display text-4xl md:text-5xl font-bold text-coffee-dark mb-4"
+          >
+            Biz bilan bog'laning
+          </h2>
+          <p class="text-lg text-gray-700">
+            Mazali Kofega tashrif buyuring, sizni kutamiz
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="scroll-reveal">
+            <div class="bg-beige rounded-lg p-6 h-full">
+              <h3 class="font-bold text-2xl text-coffee-dark mb-6">
+                Do'kon ma'lumotlari
+              </h3>
+
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <i
+                    class="fas fa-map-marker-alt text-coffee-dark mt-1 mr-4"
+                  ></i>
+                  <div>
+                    <h4 class="font-bold text-coffee-dark">Manzil</h4>
+                    <p class="text-gray-700">
+                      Toshkent shahri, Shayxontohur tumani, Navoiy ko'chasi 15A
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <i class="fas fa-clock text-coffee-dark mt-1 mr-4"></i>
+                  <div>
+                    <h4 class="font-bold text-coffee-dark">Ish vaqti</h4>
+                    <p class="text-gray-700">Dushanba-Juma: 7:00 - 22:00</p>
+                    <p class="text-gray-700">Shanba-Yakshanba: 8:00 - 23:00</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <i class="fas fa-phone text-coffee-dark mt-1 mr-4"></i>
+                  <div>
+                    <h4 class="font-bold text-coffee-dark">Telefon</h4>
+                    <p class="text-gray-700">+998 90 123 45 67</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <i class="fas fa-envelope text-coffee-dark mt-1 mr-4"></i>
+                  <div>
+                    <h4 class="font-bold text-coffee-dark">Email</h4>
+                    <p class="text-gray-700">info@mazalikofe.uz</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="font-bold text-coffee-dark mb-4">Bizni kuzating</h4>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-coffee-dark text-white rounded-full flex items-center justify-center hover:bg-coffee-medium transition-colors"
+                  >
+                    <i class="fab fa-telegram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-coffee-dark text-white rounded-full flex items-center justify-center hover:bg-coffee-medium transition-colors"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-coffee-dark text-white rounded-full flex items-center justify-center hover:bg-coffee-medium transition-colors"
+                  >
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-coffee-dark text-white rounded-full flex items-center justify-center hover:bg-coffee-medium transition-colors"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-reveal delay-100">
+            <div class="bg-beige rounded-lg p-6">
+              <h3 class="font-bold text-2xl text-coffee-dark mb-6">
+                Xabar yuboring
+              </h3>
+
+              <form id="contact-form" class="space-y-4">
+                <div>
+                  <label for="name" class="block text-gray-700 mb-2">Ism</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-coffee-dark"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email" class="block text-gray-700 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-coffee-dark"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="subject" class="block text-gray-700 mb-2"
+                    >Mavzu</label
+                  >
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-coffee-dark"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="message" class="block text-gray-700 mb-2"
+                    >Xabar</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-coffee-dark"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full px-6 py-3 bg-coffee-dark text-white rounded-full hover:bg-coffee-medium transition-colors"
+                >
+                  Xabar yuborish
+                </button>
+              </form>
+
+              <div id="form-message" class="mt-4 p-4 rounded-lg hidden"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 scroll-reveal delay-200">
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.4738329315!2d69.24063431544533!3d41.31115197926937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b4b4b4b4b4b%3A0x4b4b4b4b4b4b4b4b!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sus!4v1629795086991!5m2!1sen!2sus"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-coffee-dark text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center space-x-2 mb-4">
+              <i class="fas fa-coffee text-2xl text-gold"></i>
+              <span class="font-display text-2xl font-bold">Mazali Kofe</span>
+            </div>
+            <p class="text-gray-300">
+              Hayotning har bir lahzasidan bahramand bo'ling, bitta yaxshi
+              kofedan boshlang.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4">Tezkor havolalar</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-300 hover:text-gold transition-colors"
+                  >Bosh sahifa</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-300 hover:text-gold transition-colors"
+                  >Biz haqimizda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#menu"
+                  class="text-gray-300 hover:text-gold transition-colors"
+                  >Menyu</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="text-gray-300 hover:text-gold transition-colors"
+                  >Galereya</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4">Xizmatlar</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-gold transition-colors"
+                  >Kofe obunasi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-gold transition-colors"
+                  >Korporativ xizmatlar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-gold transition-colors"
+                  >Kofe kurslari</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-gold transition-colors"
+                  >Sovg'a kartalari</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-4">Obuna bo'ling</h4>
+            <p class="text-gray-300 mb-4">
+              Eng so'nggi chegirmalar va kofe yangiliklarini oling
+            </p>
+            <form id="newsletter-form" class="flex">
+              <input
+                type="email"
+                placeholder="Sizning emailingiz"
+                class="flex-1 px-4 py-2 rounded-l-lg text-gray-800 focus:outline-none"
+              />
+              <button
+                type="submit"
+                class="px-4 py-2 bg-gold text-coffee-dark rounded-r-lg hover:bg-yellow-600 transition-colors"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p class="text-gray-300">
+            &copy; 2023 Mazali Kofe. Barcha huquqlar himoyalangan.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-8 right-8 w-12 h-12 bg-coffee-dark text-white rounded-full shadow-lg hover:bg-coffee-medium transition-colors hidden"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking links
+      const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+      mobileMenuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Navbar scroll effect
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("navbar-blur", "shadow-md");
+        } else {
+          navbar.classList.remove("navbar-blur", "shadow-md");
+        }
+      });
+
+      // Scroll reveal animation
+      const scrollRevealElements = document.querySelectorAll(".scroll-reveal");
+
+      const checkScrollReveal = () => {
+        scrollRevealElements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+
+          if (elementTop < windowHeight - 100) {
+            element.classList.add("active");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", checkScrollReveal);
+      window.addEventListener("load", checkScrollReveal);
+
+      // Smooth scroll to anchor
+      const navLinks = document.querySelectorAll('a[href^="#"]');
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          const targetId = link.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Back to top button
+      const backToTopButton = document.getElementById("back-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.remove("hidden");
+        } else {
+          backToTopButton.classList.add("hidden");
+        }
+      });
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Contact form submission
+      const contactForm = document.getElementById("contact-form");
+      const formMessage = document.getElementById("form-message");
+
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Get form data
+        const formData = new FormData(contactForm);
+        const name = formData.get("name");
+        const email = formData.get("email");
+        const subject = formData.get("subject");
+        const message = formData.get("message");
+
+        // Simulate form submission
+        formMessage.textContent =
+          "Xabaringiz uchun rahmat! Tez orada sizga javob beramiz.";
+        formMessage.classList.add("bg-green-100", "text-green-800");
+        formMessage.classList.remove("hidden");
+
+        // Reset form
+        contactForm.reset();
+
+        // Hide message after 3 seconds
+        setTimeout(() => {
+          formMessage.classList.add("hidden");
+        }, 3000);
+      });
+
+      // Newsletter form submission
+      const newsletterForm = document.getElementById("newsletter-form");
+
+      newsletterForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Get email
+        const email = newsletterForm.querySelector('input[type="email"]').value;
+
+        // Simulate subscription
+        alert(
+          `Obuna bo'lganingiz uchun rahmat! Biz ${email} ga eng so'nggi yangiliklarni yuboramiz.`
+        );
+
+        // Reset form
+        newsletterForm.reset();
+      });
+
+      // Menu item order buttons
+      const orderButtons = document.querySelectorAll(".menu-item button");
+
+      orderButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const itemName = button
+            .closest(".menu-item")
+            .querySelector("h3").textContent;
+          alert(`Siz ${itemName} ni savatga qo'shdingiz!`);
+        });
+      });
+    </script>
+  </body>
+</html>
